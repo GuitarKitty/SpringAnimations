@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		8404718525E76AA90078B6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8404718325E76AA90078B6A2 /* Main.storyboard */; };
 		8404718725E76AAC0078B6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8404718625E76AAC0078B6A2 /* Assets.xcassets */; };
 		8404718A25E76AAC0078B6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8404718825E76AAC0078B6A2 /* LaunchScreen.storyboard */; };
+		8404719925E76B970078B6A2 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404719825E76B970078B6A2 /* Animation.swift */; };
+		C82E6E0592545604BE2B3ADC /* Pods_HomeWork2_9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D3EA1FD1152CBFAF342655 /* Pods_HomeWork2_9.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14BB672AA68958871A0F8F52 /* Pods-HomeWork2.9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWork2.9.release.xcconfig"; path = "Target Support Files/Pods-HomeWork2.9/Pods-HomeWork2.9.release.xcconfig"; sourceTree = "<group>"; };
 		8404717A25E76AA90078B6A2 /* HomeWork2.9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork2.9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8404717D25E76AA90078B6A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8404717F25E76AA90078B6A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		8404718625E76AAC0078B6A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8404718925E76AAC0078B6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8404718B25E76AAC0078B6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8404719825E76B970078B6A2 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		91D3EA1FD1152CBFAF342655 /* Pods_HomeWork2_9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWork2_9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6BE3ABA583883D5C0962134 /* Pods-HomeWork2.9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWork2.9.debug.xcconfig"; path = "Target Support Files/Pods-HomeWork2.9/Pods-HomeWork2.9.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82E6E0592545604BE2B3ADC /* Pods_HomeWork2_9.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2767B794A03106FCC31E9AA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91D3EA1FD1152CBFAF342655 /* Pods_HomeWork2_9.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8404717125E76AA80078B6A2 = {
 			isa = PBXGroup;
 			children = (
 				8404717C25E76AA90078B6A2 /* HomeWork2.9 */,
 				8404717B25E76AA90078B6A2 /* Products */,
+				A02ED726DD296ECBBA225AF5 /* Pods */,
+				2767B794A03106FCC31E9AA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,65 @@
 		8404717C25E76AA90078B6A2 /* HomeWork2.9 */ = {
 			isa = PBXGroup;
 			children = (
-				8404717D25E76AA90078B6A2 /* AppDelegate.swift */,
-				8404717F25E76AA90078B6A2 /* SceneDelegate.swift */,
-				8404718125E76AA90078B6A2 /* ViewController.swift */,
-				8404718325E76AA90078B6A2 /* Main.storyboard */,
-				8404718625E76AAC0078B6A2 /* Assets.xcassets */,
-				8404718825E76AAC0078B6A2 /* LaunchScreen.storyboard */,
-				8404718B25E76AAC0078B6A2 /* Info.plist */,
+				8404719725E76B640078B6A2 /* Models */,
+				8404719525E76B1F0078B6A2 /* ViewControllers */,
+				8404719325E76AF10078B6A2 /* Storyboards */,
+				8404719225E76AD90078B6A2 /* SupportFIles */,
+				8404719425E76B0A0078B6A2 /* Resources */,
 			);
 			path = HomeWork2.9;
+			sourceTree = "<group>";
+		};
+		8404719225E76AD90078B6A2 /* SupportFIles */ = {
+			isa = PBXGroup;
+			children = (
+				8404717D25E76AA90078B6A2 /* AppDelegate.swift */,
+				8404717F25E76AA90078B6A2 /* SceneDelegate.swift */,
+				8404718B25E76AAC0078B6A2 /* Info.plist */,
+			);
+			path = SupportFIles;
+			sourceTree = "<group>";
+		};
+		8404719325E76AF10078B6A2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8404718325E76AA90078B6A2 /* Main.storyboard */,
+				8404718825E76AAC0078B6A2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8404719425E76B0A0078B6A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8404718625E76AAC0078B6A2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8404719525E76B1F0078B6A2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8404718125E76AA90078B6A2 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8404719725E76B640078B6A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8404719825E76B970078B6A2 /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A02ED726DD296ECBBA225AF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6BE3ABA583883D5C0962134 /* Pods-HomeWork2.9.debug.xcconfig */,
+				14BB672AA68958871A0F8F52 /* Pods-HomeWork2.9.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8404718E25E76AAC0078B6A2 /* Build configuration list for PBXNativeTarget "HomeWork2.9" */;
 			buildPhases = (
+				A8160E340FF4C3EEF6AEC947 /* [CP] Check Pods Manifest.lock */,
 				8404717625E76AA90078B6A2 /* Sources */,
 				8404717725E76AA90078B6A2 /* Frameworks */,
 				8404717825E76AA90078B6A2 /* Resources */,
+				0C0730C99AF2085F7E077E2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +201,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C0730C99AF2085F7E077E2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWork2.9/Pods-HomeWork2.9-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWork2.9/Pods-HomeWork2.9-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeWork2.9/Pods-HomeWork2.9-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8160E340FF4C3EEF6AEC947 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeWork2.9-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8404717625E76AA90078B6A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +250,7 @@
 			files = (
 				8404718225E76AA90078B6A2 /* ViewController.swift in Sources */,
 				8404717E25E76AA90078B6A2 /* AppDelegate.swift in Sources */,
+				8404719925E76B970078B6A2 /* Animation.swift in Sources */,
 				8404718025E76AA90078B6A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,12 +395,13 @@
 		};
 		8404718F25E76AAC0078B6A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6BE3ABA583883D5C0962134 /* Pods-HomeWork2.9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3S29CPM5XY;
-				INFOPLIST_FILE = HomeWork2.9/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HomeWork2.9/SupportFIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +409,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "GK.HomeWork2-9";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8404719025E76AAC0078B6A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14BB672AA68958871A0F8F52 /* Pods-HomeWork2.9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3S29CPM5XY;
-				INFOPLIST_FILE = HomeWork2.9/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HomeWork2.9/SupportFIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +429,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "GK.HomeWork2-9";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
