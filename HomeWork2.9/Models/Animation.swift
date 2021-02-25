@@ -17,16 +17,15 @@ struct Animation {
 
 extension Animation {
     static func getAnimation() -> Animation {
-        let anima = Animation(
+        let animations = Animation(
             title: "",
             curve: "",
             duration: Float.random(in: 1..<2),
             force: Float.random(in: 0.1..<1),
             delay: Float.random(in: 0.1..<1.5)
         )
-        return anima
+        return animations
     }
-    
 }
 
 

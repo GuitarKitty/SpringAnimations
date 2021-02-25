@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     //MARK: - Private property
     let animation = Spring.AnimationPreset.allCases
     let curve = Spring.AnimationCurve.allCases
-    var ani = Animation.getAnimation()
+    var animations = Animation.getAnimation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,11 +49,11 @@ class ViewController: UIViewController {
 //MARK: - Extansions
 extension ViewController {
     func springViewProperty() {
-        springView.animation = ani.title
-        springView.curve = ani.curve
-        springView.duration = CGFloat(ani.duration)
-        springView.delay = CGFloat(ani.delay)
-        springView.force = CGFloat(ani.force)
+        springView.animation = animations.title
+        springView.curve = animations.curve
+        springView.duration = CGFloat(animations.duration)
+        springView.delay = CGFloat(animations.delay)
+        springView.force = CGFloat(animations.force)
         
         textLabelProperty()
         
@@ -65,11 +65,11 @@ extension ViewController {
     func runButtonProperty() {
         getModelProperty()
         runButton.animation = Spring.AnimationPreset.pop.rawValue
-        runButton.curve = ani.curve
-        runButton.duration = CGFloat(ani.duration)
-        runButton.delay = CGFloat(ani.delay)
-        runButton.force = CGFloat(ani.force)
-        runButton.setTitle("Run animate view " + ani.title, for: .normal)
+        runButton.curve = animations.curve
+        runButton.duration = CGFloat(animations.duration)
+        runButton.delay = CGFloat(animations.delay)
+        runButton.force = CGFloat(animations.force)
+        runButton.setTitle("Run animate view " + animations.title, for: .normal)
         
         runButton.animate()
     }
@@ -78,11 +78,11 @@ extension ViewController {
 //MARK: - TextLablel property
 extension ViewController {
     func textLabelProperty() {
-        titleLabel.text = ani.title
-        curveLabel.text = ani.curve
-        durationLabel.text = String(format: "%.2f", ani.duration)
-        delayLabel.text = String(format: "%.2f", ani.delay)
-        forceLabel.text = String(format: "%.2f", ani.force)
+        titleLabel.text = animations.title
+        curveLabel.text = animations.curve
+        durationLabel.text = String(format: "%.2f", animations.duration)
+        delayLabel.text = String(format: "%.2f", animations.delay)
+        forceLabel.text = String(format: "%.2f", animations.force)
     }
 }
 
@@ -91,8 +91,8 @@ extension ViewController {
     func getModelProperty() {
         let IndexAni = Int.random(in: 0..<animation.count)
         let IndexCur = Int.random(in: 0..<curve.count)
-        ani.title = animation[IndexAni].rawValue
-        ani.curve = curve[IndexCur].rawValue
+        animations.title = animation[IndexAni].rawValue
+        animations.curve = curve[IndexCur].rawValue
     }
 }
 
